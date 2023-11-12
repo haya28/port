@@ -1,3 +1,17 @@
 .size_test {
     font-size:  40px;
 }
+
+ h2 {
+    position: relative;
+    font-size: 200%;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    padding: 0 0 0 1.5em;
+    border-bottom: 3px solid var(--theme-color-2);
+} 
+
+.background_test {
+    padding: 180px;
+    background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
