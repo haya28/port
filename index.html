@@ -10,10 +10,11 @@
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
     />
     <style>
+      /* 上に出てくるばー
         .navbar {
           overflow: hidden;
           background-color: #333333;   
-          position: fixed; /* バーを常に画面の上部に固定 */
+          position: fixed;  バーを常に画面の上部に固定 
           top: 0;
           width: 100%; 
         }
@@ -21,7 +22,7 @@
         .navbar a {
           float: left;
           display: block;
-          color: #f2f2f2; /* バー内のテキスト色 */
+          color: #f2f2f2;  バー内のテキスト色 
           text-align: center;
           padding: 14px 16px;
           text-decoration: none;
@@ -30,43 +31,52 @@
           .navbar a:hover {
           background-color: #ddd; 
           color: black; 
-        } 
+        }  */
       </style>
   </head>
 
-  <body> <!-- ここから本文開始 -->
+  <body style="overflow: auto;"> <!-- ここから本文開始 -->
 
-    <div class="navbar">
+    <!-- <div class="navbar">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#history">History</a>
         <a href="skill">Skill</a>
-      </div>
+      </div> -->
       
     <div style="margin-top: 50px;">
         <h1>福田捷人のポートフォリオ</h1>
-        <!-- <div class="size_test">
-        Home<br /></div>
-        About<br />
-        history<br /> -->
-        
-    </div>
-    <div class="size_test">
-         <h2>Home<br /></h2>
+        <h1>Home</h1>
     </div>
 
-        <h2>About<br /></h2>
-        <br />
-
-
-        <h2>History<br /></h2>
-        2006年:誕生<br />
-        2022年:大阪公立公大高専入学<br />
-        2023年:知能情報コース入学<br />
-        現在高専2年生<br />
-
-        <h2>Skill</h2>
-        <button class="favorite styled" type="button">課題５</button>
-
+    <ul class="home">
+      <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300 rel="stylesheet">
+      <li class="home_line">
+        About<br>
+        現在高専2年生の福田です！<br>
+        プログラミングに関してはまだまだ勉強中ですががんばります！<br>
+      </li>
+      <li class="home_line">
+        History
+      </li>
+      <li class="home_line">
+        Skill
+      </li>
+        経験のあるプログラミング言語:<br>
+        python<br>
+        Arduino<br>
+        作成したもの：<br>
+        ①学校で作成した問題と回答を入力してランダムに出すツール↓
+          <li class = button_skill>
+            <a href="https://github.com/haya28/kadai5.git"><button>ボタン</button></a>
+          </li>
+        ②2023年度高専祭で作成したプログラミングの補助↓
+          <li class = button_skill>
+            <a href="https://github.com/kk2a/kosensai2-I-B.git"><button>ボタン</button></a>
+          </li>
+      </li>
+    </ul>
+    
+        <!-- <button class="favorite styled" type="button">課題５</button> -->
   </body> <!-- ここまで本文終了 -->
 </html>
