@@ -1,8 +1,10 @@
-.size_test {
-    font-size:  40px;
+body {
+    background: #fff;
+    height: 200%;
+    color: black
 }
 
- h2 {
+.h2 {
     position: relative;
     font-size: 200%;
     letter-spacing: 0.05em;
@@ -14,4 +16,51 @@
 .background_test {
     padding: 180px;
     background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    /* text-shadow: 1px 1px 1px #000; */
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.styled:active {
+    box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.page_home {
+    list-style-type: none;
+}
+
+.home_home {
+    font-size: 60px;
+    /* font-family: 'Oswald', sans-serif; */
+    text-align: center; 
+    font-family: "Nico Moji";
+}
+
+.home_menu {
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
