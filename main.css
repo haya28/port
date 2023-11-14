@@ -4,10 +4,6 @@ body {
     color: black
 }
 
-.size_font {
-    font-size:  40px;
-}
-
 .h2 {
     position: relative;
     font-size: 200%;
@@ -59,7 +55,9 @@ body {
 
 .home_home {
     font-size: 60px;
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    text-align: center; 
+    font-family: "Nico Moji";
 }
 
 .home_menu {
