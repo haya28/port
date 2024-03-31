@@ -68,3 +68,24 @@ body {
 .mb5 {
     margin-bottom: 2em;
 }
+
+CSS
+.example {
+   width: 300px;
+   height: 300px;
+   border: solid 1px black;
+}
+.example img {
+   width: 50%;
+   height: 50%;
+}
+
+.images {
+   width: 300px;
+   height: 300px;
+   border: solid 1px black;
+}
+.images img {
+   width: 50%;
+   height: 50%;
+}
