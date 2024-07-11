@@ -1,33 +1,71 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
-
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./main.css">
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fukuda Hayato's Portfolio</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=yes"
-    />
-  </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fukuda Hayato's Portfolio</h1>
+    </header>
 
-  <body style="overflow: auto;"> 
+    <nav>
+        <a href="#career">経歴</a>
+        <a href="#skills">スキル</a>
+        <a href="#certifications">資格</a>
+    </nav>
 
-    <ul class="page_home">
-      <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
-      <li class="home_home">
-        FukudaHayato's Portfolio<br>
-        Home<br>
-      </li>
-      <li class="home_menu">
-        <a href='About.html'><p class="mb2">About</p></a>
-      </li>
-      <li class="home_menu">
-        <a href='History.html'><p class="mb2">History</p></a>
-      </li>
-      <li class="home_menu">
-        <a href='Skill.html'><p class="mb2">Skill</p></a>
-      </li>
-    </ul>
-  </body> <!-- ここまで本文終了 -->
+    <main>
+        <section id="career">
+            <h2>経歴</h2>
+            <p>出身高校: ○○高等学校</p>
+            <!-- 他の経歴情報を追加 -->
+        </section>
+
+        <section id="skills">
+            <h2>スキル</h2>
+            <div class="skill-icons">
+                <img src="path/to/python-icon.png" alt="Python" data-skill="python">
+                <img src="path/to/javascript-icon.png" alt="JavaScript" data-skill="javascript">
+                <img src="path/to/html5-icon.png" alt="HTML5" data-skill="html5">
+                <img src="path/to/css3-icon.png" alt="CSS3" data-skill="css3">
+                <!-- 他のスキルアイコンを追加 -->
+            </div>
+            <div class="skill-details">
+                <div id="python">
+                    <h3>Python</h3>
+                    <ul>
+                        <li>プロジェクト1</li>
+                        <li>プロジェクト2</li>
+                    </ul>
+                </div>
+                <div id="javascript">
+                    <h3>JavaScript</h3>
+                    <ul>
+                        <li>プロジェクト1</li>
+                        <li>プロジェクト2</li>
+                    </ul>
+                </div>
+                <!-- 他のスキル詳細を追加 -->
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>資格</h2>
+            <ul>
+                <li>資格1</li>
+                <li>資格2</li>
+                <!-- 他の資格を追加 -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fukuda Hayato</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
