@@ -1,36 +1,166 @@
-/* 既存のCSSはそのままで、以下を追加または修正 */
+:root {
+    --color-1: #FF6B6B;
+    --color-2: #4ECDC4;
+    --color-3: #FFD93D;
+    --color-4: #6A5ACD;
+    --color-5: #20B2AA;
+    --text-color: #333333;
+    --background-color: #F7F7F7;
+}
 
-.skill-icons {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 2rem;
+    flex-direction: column;
 }
 
-.skill-icons img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.home { background-color: var(--background-color); }
+.about { background-color: var(--color-1); }
+.skills { background-color: var(--color-2); }
+.projects { background-color: var(--color-3); }
+.contact { background-color: var(--color-4); }
+
+header {
+    background-color: var(--color-5);
+    text-align: center;
+    padding: 40px;
+    color: white;
 }
 
-.skill-icons img:hover {
-    transform: scale(1.1);
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-.skill-details > div {
-    display: none;
-    background-color: #f9f9f9;
-    padding: 1rem;
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
     border-radius: 5px;
-    margin-top: 1rem;
+    transition: background-color 0.3s;
 }
 
-@media screen and (max-width: 768px) {
-    .skill-icons img {
-        width: 60px;
-        height: 60px;
+.home-link { background-color: var(--background-color); color: var(--text-color); }
+.about-link { background-color: var(--color-1); }
+.skills-link { background-color: var(--color-2); }
+.projects-link { background-color: var(--color-3); }
+.contact-link { background-color: var(--color-4); }
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid var(--color-5);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
     }
+    
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* 以下jsのページ */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
 }
